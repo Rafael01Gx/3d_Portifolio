@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
+import { HeroComponent } from "./components/sections/hero/hero.component";
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  template: `<main>
-    <div>
-      <h1 class="text-3xl underline">Test</h1>
-    </div>
-  </main> `,
+  imports: [HeroComponent],
+  template: `
+  <app-hero />
+  `,
 })
 export class AppComponent {
   title = '3d_Portifolio';
