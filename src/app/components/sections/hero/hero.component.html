@@ -41,7 +41,10 @@
     <!-- RIGHT #D MODEL-->
      <figure>
       <div class="hero-3d-layout">
-        <app-hero-experience />
+     
+    <ngt-canvas [sceneGraph]="scene"  [camera]="{ position: [0, 0, 15], fov: 45 }" />
+
+     
       </div>
      </figure>
   </div>
