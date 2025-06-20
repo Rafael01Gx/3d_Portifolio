@@ -29,7 +29,7 @@ extend({
 });
 
 @Component({
-  selector: 'app-scene-graph',
+  selector: 'app-hero-experience',
   imports: [NgtArgs],
   template: `
    
@@ -54,7 +54,7 @@ extend({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SceneGraph implements AfterViewInit {
+export class HeroExperience implements AfterViewInit {
   #breakpointObserver= inject (BreakpointObserver);
   #platformId= inject (PLATFORM_ID);
   minPolarAngle= Math.PI / 5;

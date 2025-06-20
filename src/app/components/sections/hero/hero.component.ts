@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { words } from '../../../constants';
 import { ButtonComponent } from "../../button/button.component";
-import { SceneGraph } from '../../hero-models/hero-experience/scene-graph.component';
+import { HeroExperience } from '../../hero-models/hero-experience/hero-experience.component';
 import { NgtCanvas } from 'angular-three';
 
 @Component({
@@ -10,7 +10,7 @@ import { NgtCanvas } from 'angular-three';
   templateUrl: './hero.component.html',
 })
 export class HeroComponent {
-  scene = SceneGraph;
+  scene = HeroExperience;
  public myWords = words;
 
 }
